@@ -1,4 +1,3 @@
-```javascript
 /* =========================================================
    PATEL DIGITALS
    MAIN JAVASCRIPT
@@ -6,34 +5,63 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
+
     /* =====================================================
        MOBILE NAVIGATION
     ===================================================== */
 
     const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+
+    /*
+       Home page uses .nav-links.
+       Other pages currently use .desktop-nav.
+
+       This supports both structures so every page
+       uses the same navigation behaviour.
+    */
+
+    const navLinks =
+        document.querySelector(".nav-links") ||
+        document.querySelector(".desktop-nav");
+
 
     if (menuToggle && navLinks) {
 
         menuToggle.addEventListener("click", () => {
 
             navLinks.classList.toggle("active");
+
             menuToggle.classList.toggle("active");
+
+            const isOpen =
+                navLinks.classList.contains("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
 
         });
 
 
-        /* Close menu when a navigation link is clicked */
+        /* Close menu after clicking a navigation link */
 
         const navigationItems =
             navLinks.querySelectorAll("a");
+
 
         navigationItems.forEach((link) => {
 
             link.addEventListener("click", () => {
 
                 navLinks.classList.remove("active");
+
                 menuToggle.classList.remove("active");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
 
             });
 
@@ -48,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const header =
         document.querySelector(".site-header");
+
 
     if (header) {
 
@@ -65,11 +94,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         };
 
+
         window.addEventListener(
             "scroll",
             handleScroll,
             { passive: true }
         );
+
 
         handleScroll();
 
@@ -82,8 +113,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const revealElements =
         document.querySelectorAll(
-            ".service-card, .work-card, .process-item, .stat"
+            ".service-card, .work-card, .process-item, .stat, .reveal"
         );
+
 
     if ("IntersectionObserver" in window) {
 
@@ -138,7 +170,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ===================================================== */
 
     const yearElement =
-        document.querySelector("[data-current-year]");
+        document.querySelector(
+            "[data-current-year]"
+        );
+
 
     if (yearElement) {
 
@@ -153,17 +188,22 @@ document.addEventListener("DOMContentLoaded", () => {
     ===================================================== */
 
     const emptyLinks =
-        document.querySelectorAll('a[href="#"]');
+        document.querySelectorAll(
+            'a[href="#"]'
+        );
+
 
     emptyLinks.forEach((link) => {
 
-        link.addEventListener("click", (event) => {
+        link.addEventListener(
+            "click",
+            (event) => {
 
-            event.preventDefault();
+                event.preventDefault();
 
-        });
+            }
+        );
 
     });
 
 });
-```
