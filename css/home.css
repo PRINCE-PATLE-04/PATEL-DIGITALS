@@ -1017,3 +1017,139 @@
         font-size: 12.5px;
     }
 }
+/* =========================================================
+   PATEL DIGITALS
+   STEP 2.2 — COMPACT HERO SCALE
+========================================================= */
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+.hero h1 {
+    max-width: 600px;
+
+    font-size: clamp(40px, 3.5vw, 50px);
+
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+}
+
+.hero-description {
+    max-width: 500px;
+
+    margin-top: 18px;
+
+    font-size: 13.5px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 23px;
+}
+
+
+/* =========================
+   LAPTOP
+========================= */
+
+@media (max-width: 1100px) {
+
+    .hero h1 {
+        max-width: 560px;
+
+        font-size: clamp(37px, 4vw, 46px);
+
+        line-height: 1.08;
+    }
+
+    .hero-description {
+        max-width: 470px;
+        font-size: 13.5px;
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero h1 {
+        max-width: 520px;
+
+        font-size: clamp(34px, 5vw, 42px);
+    }
+
+    .hero-description {
+        max-width: 450px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 760px) {
+
+    .hero h1 {
+        max-width: 100%;
+
+        font-size: clamp(30px, 7.5vw, 36px);
+
+        line-height: 1.10;
+        letter-spacing: -0.015em;
+    }
+
+    .hero-description {
+        max-width: 100%;
+
+        margin-top: 16px;
+
+        font-size: 13px;
+        line-height: 1.68;
+    }
+
+    .hero-buttons {
+        margin-top: 21px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 30px;
+
+        line-height: 1.12;
+    }
+
+    .hero-description {
+        font-size: 12.5px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+}
