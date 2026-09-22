@@ -1,0 +1,700 @@
+/* =========================================================
+   PATEL DIGITALS
+   ABOUT PAGE
+   PREMIUM BURGUNDY / GOLD
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.about-hero {
+    position: relative;
+
+    padding: 170px 0 90px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 82% 30%,
+            rgba(180, 138, 74, 0.08),
+            transparent 30%
+        ),
+        var(--burgundy-dark);
+
+    border-bottom: 1px solid rgba(180, 138, 74, 0.2);
+}
+
+.about-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -190px;
+    top: 40px;
+
+    border: 1px solid rgba(208, 173, 112, 0.08);
+
+    border-radius: 50%;
+}
+
+.about-hero-content {
+    max-width: 900px;
+}
+
+.about-hero h1 {
+    margin: 22px 0 28px;
+
+    max-width: 850px;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(48px, 7vw, 92px);
+
+    line-height: 0.98;
+
+    font-weight: 600;
+
+    letter-spacing: -0.045em;
+}
+
+.about-hero h1 span {
+    color: var(--gold-light);
+}
+
+.about-hero p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: rgba(244, 238, 227, 0.7);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+.about-hero-meta {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 90px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(180, 138, 74, 0.28);
+
+    color: rgba(208, 173, 112, 0.85);
+
+    font-size: 11px;
+
+    letter-spacing: 0.18em;
+}
+
+
+/* =========================================================
+   STORY
+========================================================= */
+
+.about-story {
+    padding: 125px 0;
+
+    background: var(--burgundy);
+}
+
+.about-story-grid {
+    display: grid;
+
+    grid-template-columns: 0.7fr 1.8fr;
+
+    gap: 80px;
+}
+
+.about-story-label {
+    padding-top: 10px;
+
+    color: var(--gold-light);
+
+    font-size: 11px;
+
+    letter-spacing: 0.2em;
+}
+
+.about-story-content {
+    max-width: 850px;
+}
+
+.about-story-content h2 {
+    margin: 0 0 38px;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(44px, 5.5vw, 74px);
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: -0.045em;
+}
+
+.about-story-content h2 span {
+    color: var(--gold-light);
+}
+
+.about-story-content p {
+    max-width: 720px;
+
+    margin: 0 0 24px;
+
+    color: rgba(244, 238, 227, 0.65);
+
+    font-size: 17px;
+
+    line-height: 1.85;
+}
+
+.about-story-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   PILLARS
+========================================================= */
+
+.about-pillars {
+    padding: 130px 0;
+
+    background: var(--burgundy-dark);
+
+    border-top: 1px solid rgba(180, 138, 74, 0.18);
+}
+
+.about-pillars .section-heading {
+    margin-bottom: 80px;
+}
+
+.about-pillars .section-heading h2 span {
+    color: var(--gold-light);
+}
+
+.pillars-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid rgba(180, 138, 74, 0.25);
+}
+
+.pillar {
+    min-height: 310px;
+
+    padding: 35px 28px 25px 0;
+
+    margin-right: 28px;
+
+    border-right: 1px solid rgba(180, 138, 74, 0.18);
+}
+
+.pillar:last-child {
+    margin-right: 0;
+
+    border-right: 0;
+}
+
+.pillar > span {
+    display: block;
+
+    margin-bottom: 60px;
+
+    color: var(--gold);
+
+    font-family: var(--font-display);
+
+    font-size: 28px;
+}
+
+.pillar h3 {
+    margin: 0 0 18px;
+
+    color: var(--ivory);
+
+    font-size: 14px;
+
+    letter-spacing: 0.13em;
+}
+
+.pillar p {
+    max-width: 250px;
+
+    margin: 0;
+
+    color: rgba(244, 238, 227, 0.56);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+.about-approach {
+    padding: 135px 0;
+
+    background: var(--burgundy);
+}
+
+.approach-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 110px;
+}
+
+.approach-heading h2 {
+    margin: 20px 0 0;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(46px, 5vw, 72px);
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: -0.045em;
+}
+
+.approach-heading h2 span {
+    color: var(--gold-light);
+}
+
+.approach-content {
+    border-top: 1px solid rgba(180, 138, 74, 0.25);
+}
+
+.approach-row {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 25px;
+
+    padding: 28px 0;
+
+    border-bottom: 1px solid rgba(180, 138, 74, 0.18);
+}
+
+.approach-row > span {
+    color: var(--gold);
+
+    font-family: var(--font-display);
+
+    font-size: 25px;
+}
+
+.approach-row h3 {
+    margin: 0 0 10px;
+
+    color: var(--ivory);
+
+    font-size: 14px;
+
+    letter-spacing: 0.12em;
+}
+
+.approach-row p {
+    max-width: 480px;
+
+    margin: 0;
+
+    color: rgba(244, 238, 227, 0.58);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   POSITIONING
+========================================================= */
+
+.about-positioning {
+    padding: 150px 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(180, 138, 74, 0.1),
+            transparent 45%
+        ),
+        var(--burgundy-deep);
+
+    border-top: 1px solid rgba(180, 138, 74, 0.2);
+}
+
+.positioning-inner {
+    max-width: 950px;
+}
+
+.positioning-inner h2 {
+    margin: 20px 0 30px;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(48px, 6vw, 84px);
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: -0.045em;
+}
+
+.positioning-inner h2 span {
+    color: var(--gold-light);
+}
+
+.positioning-inner p {
+    max-width: 690px;
+
+    margin: 0;
+
+    color: rgba(244, 238, 227, 0.63);
+
+    font-size: 17px;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.about-services {
+    padding: 130px 0;
+
+    background: var(--burgundy);
+
+    border-top: 1px solid rgba(180, 138, 74, 0.18);
+}
+
+.about-services .section-heading {
+    margin-bottom: 75px;
+}
+
+.about-services .section-heading h2 span {
+    color: var(--gold-light);
+}
+
+.about-services-list {
+    border-top: 1px solid rgba(180, 138, 74, 0.25);
+}
+
+.about-service {
+    display: grid;
+
+    grid-template-columns: 90px 1fr 50px;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    color: var(--ivory);
+
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(180, 138, 74, 0.2);
+
+    transition:
+        padding-left 0.3s ease,
+        color 0.3s ease;
+}
+
+.about-service span {
+    color: var(--gold);
+
+    font-family: var(--font-display);
+
+    font-size: 25px;
+}
+
+.about-service h3 {
+    margin: 0;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(25px, 3vw, 39px);
+
+    font-weight: 500;
+
+    letter-spacing: -0.02em;
+}
+
+.about-service strong {
+    justify-self: end;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(208, 173, 112, 0.28);
+
+    border-radius: 50%;
+
+    color: var(--gold-light);
+
+    font-size: 16px;
+
+    font-weight: 400;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.about-service:hover {
+    padding-left: 12px;
+
+    color: var(--gold-light);
+}
+
+.about-service:hover strong {
+    transform: rotate(45deg);
+
+    background: rgba(180, 138, 74, 0.08);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+    padding: 145px 0;
+
+    background: var(--burgundy-dark);
+
+    border-top: 1px solid rgba(180, 138, 74, 0.2);
+}
+
+.about-cta-inner {
+    max-width: 920px;
+}
+
+.about-cta h2 {
+    margin: 20px 0 28px;
+
+    font-family: var(--font-display);
+
+    font-size: clamp(48px, 6vw, 82px);
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    letter-spacing: -0.045em;
+}
+
+.about-cta h2 span {
+    color: var(--gold-light);
+}
+
+.about-cta p {
+    max-width: 590px;
+
+    margin: 0 0 38px;
+
+    color: rgba(244, 238, 227, 0.64);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pillar:nth-child(2) {
+        border-right: 0;
+    }
+
+    .pillar:nth-child(3),
+    .pillar:nth-child(4) {
+        border-top: 1px solid rgba(180, 138, 74, 0.18);
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
+
+        gap: 70px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .about-hero {
+        padding: 140px 0 75px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(44px, 8vw, 70px);
+    }
+
+    .about-hero-meta {
+        margin-top: 60px;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .about-story-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .about-story,
+    .about-pillars,
+    .about-approach,
+    .about-positioning,
+    .about-services,
+    .about-cta {
+        padding: 100px 0;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        padding: 125px 0 65px;
+    }
+
+    .about-hero h1 {
+        font-size: 39px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+    }
+
+    .about-story-content h2 {
+        font-size: 40px;
+    }
+
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pillar,
+    .pillar:nth-child(2),
+    .pillar:nth-child(3),
+    .pillar:nth-child(4) {
+        min-height: auto;
+
+        margin: 0;
+
+        padding: 30px 0;
+
+        border-right: 0;
+
+        border-top: 0;
+
+        border-bottom: 1px solid rgba(180, 138, 74, 0.18);
+    }
+
+    .pillar:last-child {
+        border-bottom: 0;
+    }
+
+    .pillar > span {
+        margin-bottom: 30px;
+    }
+
+    .approach-heading h2 {
+        font-size: 43px;
+    }
+
+    .approach-row {
+        grid-template-columns: 50px 1fr;
+
+        gap: 15px;
+    }
+
+    .positioning-inner h2 {
+        font-size: 43px;
+    }
+
+    .about-service {
+        grid-template-columns: 45px 1fr 40px;
+
+        gap: 15px;
+
+        padding: 25px 0;
+    }
+
+    .about-service h3 {
+        font-size: 24px;
+    }
+
+    .about-service strong {
+        width: 34px;
+        height: 34px;
+    }
+
+    .about-cta h2 {
+        font-size: 43px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .about-hero h1 {
+        font-size: 35px;
+    }
+
+    .about-story-content h2 {
+        font-size: 36px;
+    }
+
+    .approach-heading h2,
+    .positioning-inner h2,
+    .about-cta h2 {
+        font-size: 39px;
+    }
+
+}
